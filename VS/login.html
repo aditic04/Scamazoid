@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="login.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="validate.js"></script>
+</head>
+
+<body>
+
+  <h3 align="center">Sign In</h3>
+  <div class="signup-body" align="center">
+    <form name="myform" onsubmit="return validate();" action="login.html">
+      <span id="pass"></span><br>
+      <span id="numloc"></span>
+      <table>
+        <tr>
+          <td><label for="fullname">Full Name</label></td>
+          <td><input type="text" id="fullname" placeholder="FirstName" size="25" required></td>
+        </tr>
+        <tr>
+          <td><label for="LastName">LastName</label></td>
+          <td><input type="text" id="LastName" placeholder="LastName" size="25" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Your Email</label></td>
+          <td><input type="email" id="email" placeholder="Email" size="25" required></td>
+        </tr>
+        <tr>
+          <td><label>Contact No.</label></td>
+          <td><input type="text" name="number" id="num_name" minlength="10" maxlength="10"
+              placeholder="Enter 10 Digit Mobile no." size="25" required></td>
+        </tr>
+        <tr>
+          <td><label for="txtPassword"> New Password</label></td>
+          <td><input type="password" id="txtPassword" size="25" required /></td>
+        </tr>
+        <tr>
+          <td><label for="txtConfirmPassword">Confirm Password </label></td>
+          <td><input type="password" id="txtConfirmPassword" size="25" required /></td>
+        </tr>
+        <tr>
+          <th colspan="2"><input type="submit" id="sub" class="white" onclick="pass_Validate()"></th>
+        </tr>
+    </form>
+  </div>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  </table>
+</body>
+
+</html>

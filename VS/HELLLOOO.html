@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang= "en" >
+<head>
+<title> This is an example for mouse events </title>
+</head>
+<body>
+<!-- code to show working of onmouseup handler -->
+<div oncontextmenu="rightclick()" > Right click on me</div>
+<button onmouseup= "mousup()" style="color:#FF0000"> Click here to generate mouse up 
+event. </button>
+<button onmousedown= "mousdown()" style="color:#2b00ff"> Click here to generate mouse 
+down event. </button>
+<button onmousemove = "style.color='green'"> Move here to generate mouse move event. 
+</button>
+<p id="demo" ondblclick="doubleclick()">Double-click this paragraph to trigger a 
+function.</p>
+<script>
+function mousup() 
+ {
+ document.getElementById("div1").innerHTML="The Mouse up event is generated and it handled.";
+ }
+function mousdown() 
+ {
+ document.getElementById("div2").innerHTML="The Mouse down event is generated and it handled.";
+ }
+function rightclick() 
+ {
+ alert("You right-clicked inside the div!");
+ }
+function doubleclick() 
+ {
+ document.getElementById("demo").innerHTML += "Hello World ";
+ }
+</script>
+<div id="div1" style="color: #0900C4"> </div>
+<div id="div2" style="color: #c45200"> </div>
+</body>
+</html>
